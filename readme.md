@@ -50,7 +50,7 @@ cd ai-project
 Edit the MCP server environment file:
 ```bash
 # Edit mcp-database-server/mcp-database-server.env
-DATABASE_TYPE=mysql
+DATABASE_TYPE=mariadb
 DATABASE_HOST=host.docker.internal
 DATABASE_NAME=your_database_name
 DATABASE_PORT=3306
@@ -224,10 +224,6 @@ docker exec -it mcp-database-server bash
 3. Make your changes
 4. Test thoroughly
 5. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License - see the LICENSE file for details.
 
 ## Support
 
