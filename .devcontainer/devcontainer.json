@@ -3,8 +3,8 @@
 {
 	"name": "ai-project",
 	"dockerComposeFile": "../.docker/docker-compose.yml",
-	"service": "open-web-ui",
-	"workspaceFolder": "/app/backend/data",
+	"service": "mcp-database-server",
+	"workspaceFolder": "/app",
 	"remoteUser": "root",
     "customizations": {
         "vscode": {

@@ -43,5 +43,13 @@ services:
       - ai-network
     ports:
       - 3000:3000
-    env_file:
-      - ../mcp-database-server/mcp-database-server.env
+    environment:
+      - API_AUTH_TOKEN=${API_AUTH_TOKEN}
+      - DATABASE_TYPE=${DATABASE_TYPE}
+      - DATABASE_HOST=${DATABASE_HOST}
+      - DATABASE_NAME=${DATABASE_NAME}
+      - DATABASE_PORT=${DATABASE_PORT}
+      - DATABASE_USER=${DATABASE_USER}
+      - DATABASE_PASSWORD=${DATABASE_PASSWORD}
+      - DATABASE_SSL=${DATABASE_SSL}
+      - DATABASE_CONNECTION_TIMEOUT=${DATABASE_CONNECTION_TIMEOUT}
